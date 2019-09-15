@@ -1,0 +1,47 @@
+Program starts
+
+Initialize Print object
+
+Initialize File object with list of available files
+
+Print Welcome to Hangman screen
+
+Print Main Menu
+1 - New Game
+2 - Exit
+
+If the user enters 2, exit program
+
+If the user enters 1, present a list of files to choose from
+1 - animals
+2 - easy words
+3 - hard words
+4 - back to main menu
+
+If the user selects a file, get random word from File object, and use that to initialize the Game object
+
+Print hangman output, the number of letters in the word as underscores in a string, letters guessed, and number of guesses remaining
+
+   ___
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+  ____|___
+
+
+Word: _ _ _ _ _ _
+
+Letters Guessed: R S A E N
+
+Guesses remaining: 8
+
+Guess another letter, or type quit to exit
+
+When user types a letter, check if letter has already been guessed, throw error if it has and prompt for a new guess
+if letter has not been guessed, check if letter is in the answer.  If yes, update word, check if word matches answer, and add letter to letters guessed.  If letter is not in answer, decrement guesses remaining and add letter to letters guessed.
+If guesses remaining reaches 0, player loses
+If word matches answer, player wins
+
+Print main menu

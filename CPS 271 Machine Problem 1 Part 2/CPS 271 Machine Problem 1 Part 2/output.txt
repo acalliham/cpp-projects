@@ -1,0 +1,25 @@
+Simpson, Homer 17 F
+99Bart, a 0 F
+Simpson, Marge 72 C
+Simpson, Lisa 100 A
+LittleHelper, Santa's 0 F
+Simpson, Maggie 0 F
+Prince, Martin 100 A
+VanHouten, Milhouse 78 C
+Wiggum, Ralph 3 F
+Gumble, Barney 32 F
+TheClown, Krusty 65 D
+Bob, Sideshow 100 A
+Skinner, Seymour 85 B
+Flanders, Todd 99 A
+Flanders, Rodd 99 A
+Szyslak, Moe 53 F
+Mann, Otto 42 F
+Smithers, Waylon 92 A
+Burns, Montgomery 23 F
+III, Snowball 0 F
+
+List of students who achieved high score of 100: 
+Simpson, Lisa
+Prince, Martin
+Bob, Sideshow

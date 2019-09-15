@@ -1,0 +1,31 @@
+Class Print
+{
+Public:
+void mainMenu();
+void fileList();
+void gameOutput(game &game, char guess, bool correct);
+char getGuess();
+void result();
+}
+
+
+Class Game
+{
+string const d_answer;
+string d_word;
+short const d_answerLen;
+char d_guess;
+char d_lettersGuessed;
+short d_guessesLeft = 8;
+bool const d_result;
+
+Public:
+Game(string answer);
+void setGuess(char letter);
+
+Private:
+void checkGuess();
+void updateLettersGuessed();
+void updateWord();
+void compareToAnswer();
+void setResult();
