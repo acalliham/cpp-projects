@@ -28,8 +28,11 @@ void printHighScore(studentData data[], ofstream& outData);
 
 int main()
 {
+	// Declare constants
+	int const classSize = 20;
+	
 	// Declare variables
-	studentData classScores[20];
+	studentData classScores[classSize];
 	int numRecords = 0;
 	ifstream inData;
 	ofstream outData;
@@ -65,33 +68,19 @@ int main()
 // Paramaters: array of type studentData struct, counter numRecords int, input file, all are passed by reference
 // Output: reads each student record from file and populates first name, last name, and test score
 //		populates grade by passing test score to assignGrade function
-// Error handling: After each student record is read, if the input file fail flag has been set,
-//		function clears the input and ignores the rest of the line.  A warning message is posted to the console
-//		to alert the user that line of student data may be incorrect.
 
 void readData(studentData data[], int& numRecords, ifstream& inData) {
 
-	for (int i = 0; i < 20; i++) {
-
-		if (!inData.eof()) {  // Check to make sure end of file hasn't been reached
-
-			inData >> data[i].studentFName >> data[i].studentLName >> data[i].testScore; // Read data from file
-
-			data[i].grade = assignGrade(data[i].testScore); // Call assignGrade() to get letter grade
-
-			numRecords++; // Counter to track the number of students and scores read from file
-
-			// Check if an error occurred when last record was read, if so clear input stream and ignore
-			//		any other data on that line, then warn user an error occurred
-			if (inData.fail()) {
-				inData.clear();
-				inData.ignore(200, '\n');
-				cout << "Warning: input file error, check line " << i + 1 << 
-					" for potential bad data \n";
-			}
-		}
-	}
+	int i = 0; // Counter to track which member of data[] is being updated
+	
+	do {  
+		inData >> data[i].studentFName >> data[i].studentLName >> data[i].testScore; // Get data from file
+		data[i].grade = assignGrade(data[i].testScore); // Call assignGrade() to get letter grade
+		numRecords++; // Counter to track the number of students and scores read from file
+		i++;  // Increment counter
+	} while (!inData.eof()); // Check to make sure end of file hasn't been reached
 }
+
 
 // assignGrade() - called by readData()
 // Paramaters: student test score int, passed by value

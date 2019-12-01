@@ -1,9 +1,2 @@
-﻿  Hangman Game.cpp
-  File.cpp
-  Print.cpp
-  Game.cpp
-C:\Projects\CPP Projects\Hangman CPP\Hangman CPP\File.cpp(31,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Generating Code...
-C:\Projects\CPP Projects\Hangman CPP\Hangman CPP\Game.cpp(23,2): warning C4267:  'initializing': conversion from 'size_t' to 'const short', possible loss of data
-C:\Projects\CPP Projects\Hangman CPP\Hangman CPP\Game.cpp(137): warning C4715:  'Game::result': not all control paths return a value
-  Hangman CPP.vcxproj -> C:\Projects\CPP Projects\Hangman CPP\Debug\Hangman Game.exe
+﻿  Print.cpp
+  Hangman CPP.vcxproj -> C:\Projects\cpp-projects\Hangman CPP\Debug\Hangman Game.exe

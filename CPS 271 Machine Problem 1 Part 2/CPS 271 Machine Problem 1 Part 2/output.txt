@@ -1,5 +1,5 @@
 Simpson, Homer 17 F
-99Bart, a 0 F
+Simpson, Bart 28 F
 Simpson, Marge 72 C
 Simpson, Lisa 100 A
 LittleHelper, Santa's 0 F

@@ -1,5 +1,5 @@
-Homer		Simpson		17a
-99Bart		Simpson		28
+Homer		Simpson		17
+Bart		Simpson		28
 Marge		Simpson		72
 Lisa		Simpson		100
 Santa's		LittleHelper	0

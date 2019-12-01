@@ -16,10 +16,13 @@ public:
 	Print();
 	Game* getGame(Game *pGame);
 	void mainMenu();
-	void fileList();
+	int gameMenu();
 	void getGuess();
 	void result(bool result);
 	void error(string message);
 	void goodGuess(char guess);
 	void badGuess(char guess, short guessesLeft);
+
+private:
+	void hangman(short guessesLeft);
 };

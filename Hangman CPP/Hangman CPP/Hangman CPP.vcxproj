@@ -159,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="File.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Print.h" />
     <ClInclude Include="Game.h" />
   </ItemGroup>
